@@ -1,0 +1,196 @@
+<!-- // Ctrl + Shift + W R   : Emmet wrap.
+// Alt + ↑ / ↓          : Mueve el contenido de una linea o seleccion.
+// Shift + Tab          : Quita la indentacion de un bloque seleccionado.
+// Alt + Shift + ↑ / ↓  : Clona la linea actual o bloque seleccionado abajo o arriba.
+// Ctrl + Shift + L     : Selecciona todas las ocurrencias de la seleccion.
+// Ctrl + Shift + K     : Borra la linea actual.
+// Ctrl + Shift + ↑ / ↓ : Crea multicursores continuos.
+// Ctrl + Alt + U       : Combierte seleccion en mayusculas.
+// Ctrl + D             : Selecciona la siguiente ocurencia con multicursor.
+
+// Ctrl + P             : [Input] Lista de busqueda para los archivos del proyecto
+// Ctrl + Shift + P     : [Input + >] Lista de busqueda para comandos.
+// Ctrl + Shift + O     : [Input + @] Lista de busqueda para las definiciones de elementos (: ordena).
+// Ctrl + G             : [Input + :] Buscar una linea en especifico.
+
+// Ctrl + Alt + clk der : Abre tab con la definicion del elemento en cursor, lo crea si no existe.
+// Ctrl + Shift + F12   : Abre una ventana que muestra la definicion del elemento en cursor.
+// F2                   : Refactorizar, rename.
+
+// Ctrl + K Z           : Modo zen.
+// Ctrl + `             : Abre la terminal.
+// Ctrl + K Ctrl + S    : Configuracion de shortcuts.
+// Ctrl + Shift + V     : Abre archivo en markdown para previsualizar.
+// Shift + Alt + S      : Guarda todos los archivos.
+// Ctrl + space         : Recupera el autocompletado.
+
+// Ctrl + /             : Comenta la linea donde se encuentre el cursor o el bloque seleccionado.
+// Ctrl + Shift + A     : Comenta solo el fragmento seleccionado. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="age-label">Age (optional)</label>
+          <input type="text" id="age" name="age" placeholder="age" />
+        </div>
+        <div class="form-group">
+          <label for="role" id="role-label">
+            Which option best describes your current role?
+          </label>
+          <select name="role" id="dropdown" required>
+            <option disabled selected value>Select current role</option>
+            <option value="Backend">Backend</option>
+            <option value="Frontend">Frontend</option>
+            <option value="FullStack">FullStack</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Development platform</p>
+          <label>
+            <input
+              name="platform"
+              value="Linux"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Linux
+          </label>
+          <label>
+            <input
+              name="platform"
+              value="Windows"
+              type="radio"
+              class="input-radio"
+            />
+            Windows
+          </label>
+          <label>
+            <input
+              name="platform"
+              value="MacOS"
+              type="radio"
+              class="input-radio"
+            />
+            MacOS
+          </label>
+        </div>
+        <div class="form-group">
+          <p>your programing languages</p>
+          <label>
+            <input
+              name="language"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            javascript
+          <label>
+            <input
+              name="language"
+              value="html"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            html
+          <label>
+            <input
+              name="language"
+              value="css"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            css
+          <label>
+            <input
+              name="language"
+              value="python"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            python
+          <label>
+            <input
+              name="language"
+              value="go"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            go
+          <label>
+            <input
+              name="language"
+              value="php"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            php
+          <label>
+            <input
+              name="language"
+              value="java"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            java
+          <label>
+            <input
+              name="language"
+              value="ruby"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            ruby
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Some other language?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
